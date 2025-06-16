@@ -25,3 +25,30 @@ Traceback (most recent call last):
     raise CachefileNotFoundException(msg)
 CRABClient.ClientExceptions.CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /home/hep/jtafoyav/production_2023/CMSSW_13_0_14/src/2023_DIGIRAW_postBPix-ext/_resubmit//scenarioB1_mpi_5_mA_1p00_ctau_100/crab_scenarioB1_mpi_5_mA_1p00_ctau_100/
 INFO 2025-06-13 15:24:13.856 UTC: 	 Log file is /home/hep/jtafoyav/production_2023/tools/status_smarter/DIGIRAW/crab.log
+DEBUG 2025-06-16 10:04:25.414 UTC: 	 CRAB Client version: v3.250409
+DEBUG 2025-06-16 10:04:25.414 UTC: 	 Running on: Linux lx04.hep.ph.ic.ac.uk 5.14.0-503.33.1.el9_5.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 19 16:23:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-06-16 10:04:25.414 UTC: 	 Using SINGULARITY image: el7:x86_64
+DEBUG 2025-06-16 10:04:25.414 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-06-16 10:04:25.414 UTC: 	 Executing command: 'status'
+DEBUG 2025-06-16 10:04:25.415 UTC: 	 Found CRAB cache file /home/hep/jtafoyav/.crab3
+ERROR 2025-06-16 10:04:25.416 UTC: 	 Cannot find .requestcache file in CRAB project directory /home/hep/jtafoyav/production_2023/CMSSW_13_0_14/src/2023_DIGIRAW_postBPix-ext/_resubmit//scenarioB1_mpi_5_mA_1p00_ctau_100/crab_scenarioB1_mpi_5_mA_1p00_ctau_100/
+ERROR 2025-06-16 10:04:25.416 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 695, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 537, in loadLocalCache
+    raise ex
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 531, in loadLocalCache
+    self.cachedinfo, self.logfile = loadCache(self.requestarea, self.logger)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/ClientUtilities.py", line 445, in loadCache
+    raise CachefileNotFoundException(msg)
+CRABClient.ClientExceptions.CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /home/hep/jtafoyav/production_2023/CMSSW_13_0_14/src/2023_DIGIRAW_postBPix-ext/_resubmit//scenarioB1_mpi_5_mA_1p00_ctau_100/crab_scenarioB1_mpi_5_mA_1p00_ctau_100/
+INFO 2025-06-16 10:04:25.419 UTC: 	 Log file is /home/hep/jtafoyav/production_2023/tools/status_smarter/DIGIRAW/crab.log
