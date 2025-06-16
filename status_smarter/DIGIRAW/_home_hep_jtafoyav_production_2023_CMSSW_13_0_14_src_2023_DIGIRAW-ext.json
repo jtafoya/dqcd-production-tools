@@ -1,0 +1,317 @@
+{
+    "scenarioB1_mpi_1_mA_0p33_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_1_mA_0p33_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_1_mA_0p33_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_1_mA_0p40_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_1_mA_0p40_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_1_mA_0p40_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_1_mA_0p40_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p33_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p33_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p40_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p40_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p67_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p67_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p90_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p90_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p90_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_2_mA_0p90_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_0p67_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_0p67_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_0p80_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_0p80_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_0p80_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_1p33_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_1p33_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_1p33_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_1p90_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_4_mA_1p90_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_0p83_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_0p83_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_1p00_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_1p67_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_1p67_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_2p40_ctau_0p1": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_2p40_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioB1_mpi_5_mA_2p40_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    }
+}
