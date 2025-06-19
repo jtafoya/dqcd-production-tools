@@ -1,6 +1,7 @@
 import re
 import os
 import glob
+import time
 import subprocess
 from collections import defaultdict
 
@@ -158,6 +159,8 @@ def invalidate_duplicate_lumi_files(duplicates_file):
 
 
 def invalidate_duplicate_lumi_files_background(duplicates_file):
+    max_parallel=50
+
     if not os.path.exists(duplicates_file):
         print(f"	File of duplicates not found: {duplicates_file}. Doing nothing.")
         return
@@ -181,8 +184,14 @@ def invalidate_duplicate_lumi_files_background(duplicates_file):
             proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
             processes.append((file_path, proc))
 
-    print("	Waiting for all background processes to finish...")
+            # Throttle if too many are running
+            while len(processes) >= max_parallel:
+                time.sleep(0.5)
+                # Clean up finished processes
+                processes = [(fp, p) for fp, p in processes if p.poll() is None]
 
+
+    print("	Waiting for all background processes to finish...")
     # Wait for all to finish
     for file_path, proc in processes:
         stdout, stderr = proc.communicate()
@@ -200,10 +209,10 @@ infix=""
 
 #suffix="2023-ext"; prefix="scenario"; infix="GENall_"
 #suffix="2023_postBPix-ext"; prefix="scenario"; infix="GENall_"
-suffix="GENSIM_2023-v2_ext"
+#suffix="GENSIM_2023-v2_ext"
 #suffix="GENSIM_2023_postBPix-v2_ext"
 #suffix="DIGIRAW_2023-ext"
-#suffix="DIGIRAW_2023_postBPix-ext"
+suffix="DIGIRAW_2023_postBPix-ext"
 #suffix="AODSIM_2023-ext"
 #suffix="AODSIM_2023_postBPix-ext"
 
