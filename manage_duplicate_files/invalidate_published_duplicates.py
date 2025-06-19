@@ -26,7 +26,7 @@ def get_dataset_list(prefix, infix, suffix, output_file):
             for dataset in dataset_list:
                 f.write(dataset + "\n")
 
-        print(f"Saved {len(dataset_list)} datasets to {output_file}")
+        print(f"Found {len(dataset_list)} published datasets, saved to {output_file}")
         print(" ")
         return dataset_list
 
@@ -47,7 +47,7 @@ def get_dataset_files(dataset_name, output_file):
             for filename in file_list:
                 f.write(filename + "\n")
 
-        print(f"Saved {len(file_list)} files to {output_file}")
+        print(f"Found {len(file_list)} files published as VALID, saved to {output_file}")
         return file_list
 
 
@@ -124,11 +124,12 @@ def get_list_duplicate_lumi_files(input_file, output_file):
             except Exception as e:
                 print(f"Skipping malformed line:\n{line}\nError: {e}")
 
-    with open(output_file, 'w') as f:
-        for dup in duplicates:
-            f.write(dup + '\n')
-
-    if len(duplicates) > 0:
+    if len(duplicates) == 0:
+        return
+    else:
+        with open(output_file, 'w') as f:
+            for dup in duplicates:
+                f.write(dup + '\n')
         print(f"	Saved {len(duplicates)} duplicate files to {output_file}")
 
 
@@ -158,7 +159,7 @@ def invalidate_duplicate_lumi_files(duplicates_file):
 
 def invalidate_duplicate_lumi_files_background(duplicates_file):
     if not os.path.exists(duplicates_file):
-        print(f"	File not found: {duplicates_file}")
+        print(f"	File of duplicates not found: {duplicates_file}. Doing nothing.")
         return
 
     processes = []
@@ -180,7 +181,7 @@ def invalidate_duplicate_lumi_files_background(duplicates_file):
             proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
             processes.append((file_path, proc))
 
-    print("	Waiting for all background processes to finish...\n")
+    print("	Waiting for all background processes to finish...")
 
     # Wait for all to finish
     for file_path, proc in processes:
@@ -199,8 +200,8 @@ infix=""
 
 #suffix="2023-ext"; prefix="scenario"; infix="GENall_"
 #suffix="2023_postBPix-ext"; prefix="scenario"; infix="GENall_"
-#suffix="GENSIM_2023-v2_ext"
-suffix="GENSIM_2023_postBPix-v2_ext"
+suffix="GENSIM_2023-v2_ext"
+#suffix="GENSIM_2023_postBPix-v2_ext"
 #suffix="DIGIRAW_2023-ext"
 #suffix="DIGIRAW_2023_postBPix-ext"
 #suffix="AODSIM_2023-ext"
@@ -229,8 +230,8 @@ dataset_list=get_dataset_list(prefix, infix, suffix, dataset_list_outfile)
 ## FOR EACH OF THE DATASETS, GET THE LIST OF PUBLISHED FILES AND GET A LIST OF FILES IN EACH OF THEM WITH DUPLICATED LUMI BLOCKS AND INVALIDATE THEM
 
 #for dataset_path in dataset_list[:5]:
-for dataset_path in dataset_list[-5:]:
-#for dataset_path in dataset_list:
+#for dataset_path in dataset_list[-5:]:
+for dataset_path in dataset_list:
     dataset=dataset_path.split("/")[1]
     datafile_list_output="output/"+suffix+"/file-list_"+dataset+".txt"
     datafile_duplicated_list_output="output/"+suffix+"/duplicated-file-list_"+dataset+".txt"
