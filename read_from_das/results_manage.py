@@ -30,6 +30,7 @@ else :
 output_file = input_file+"_formated"
 output_file_dict_complete = input_file+"_dictionary"
 output_file_dict_incomplete = input_file+"_dictionary_incomplete"
+output_file_dict_complete_duplicated = input_file+"_dictionary_complete_duplicated"
 
 print(f"Processing {input_file}")
 
@@ -109,6 +110,16 @@ def clean_file_IncompleteSamples_nlumis(output_file, output_file_dict_incomplete
 #                outfile.write(cleaned_line + '\n')
                 outfile.write("     " + cleaned_line_2)
 
+def clean_file_CompleteDuplicatedSamples(output_file, output_file_dict_complete_duplicated):
+    with open(output_file, 'r') as infile, open(output_file_dict_complete_duplicated, 'w') as outfile:
+        for line in infile:
+            if ('"nlumis":10000' in line and '"nfiles":1000' not in line) and not ("scenarioB2" in line or "scenarioC" in line): # only complete scenarioA and scenarioB1 samples with duplicated files are listed
+                cleaned_line_1 = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":
+                cleaned_line_2 = re.sub(r'"nlumis":\d+', '', cleaned_line_1)  # Remove ,"nlumis":
+                outfile.write(line)
+#                outfile.write(cleaned_line + '\n')
+#                outfile.write("     " + cleaned_line_2)
+
 
 
 # Usage
@@ -119,3 +130,6 @@ print(f"	Dictionary of completed samples written to {output_file_dict_complete}"
 
 clean_file_IncompleteSamples_nlumis(output_file, output_file_dict_incomplete)
 print(f"	Dictionary of incomplete samples written to {output_file_dict_incomplete}")
+
+clean_file_CompleteDuplicatedSamples(output_file, output_file_dict_complete_duplicated)
+print(f"	Dictionary of complete but duplicated samples written to {output_file_dict_complete_duplicated}")
