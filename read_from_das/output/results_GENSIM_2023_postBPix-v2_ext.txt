@@ -121,9 +121,9 @@
 /scenarioA_mpi_4_mA_1p33_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":399890353261,"max_ldate":1744599842,"median_cdate":1744506183,"median_ldate":1744506183,"nblocks":43,"nevents":649167,"nfiles":1000,"nlumis":10000,"num_block":43,"num_event":649167,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_4_mA_1p33_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":322104960989,"max_ldate":1749173508,"median_cdate":1748265192,"median_ldate":1748265192,"nblocks":89,"nevents":524849,"nfiles":809,"nlumis":8090,"num_block":89,"num_event":524849,"num_file":809,"num_lumi":8090}]
+[{"file_size":398067333807,"max_ldate":1750125767,"median_cdate":1748276599,"median_ldate":1748276599,"nblocks":110,"nevents":648580,"nfiles":1000,"nlumis":10000,"num_block":110,"num_event":648580,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_4_mA_1p33_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":141259706905,"max_ldate":1748203519,"median_cdate":1748150050,"median_ldate":1748150050,"nblocks":130,"nevents":234421,"nfiles":361,"nlumis":3610,"num_block":130,"num_event":234421,"num_file":361,"num_lumi":3610}]
+[{"file_size":532463310575,"max_ldate":1750163578,"median_cdate":1750138372,"median_ldate":1750138372,"nblocks":159,"nevents":883921,"nfiles":1361,"nlumis":10000,"num_block":159,"num_event":883921,"num_file":1361,"num_lumi":10000}]
 /scenarioA_mpi_4_mA_1p33_ctau_1p0/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":399440770570,"max_ldate":1744599982,"median_cdate":1744052130,"median_ldate":1744052130,"nblocks":29,"nevents":648439,"nfiles":1000,"nlumis":10000,"num_block":29,"num_event":648439,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_4_mA_1p90_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
@@ -139,7 +139,7 @@
 /scenarioA_mpi_5_mA_0p50_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":382456839707,"max_ldate":1744021484,"median_cdate":1743966173,"median_ldate":1743966173,"nblocks":15,"nevents":634639,"nfiles":1000,"nlumis":10000,"num_block":15,"num_event":634639,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_5_mA_0p50_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":373366010927,"max_ldate":1748263391,"median_cdate":1748188321,"median_ldate":1748188321,"nblocks":149,"nevents":632019,"nfiles":995,"nlumis":9950,"num_block":149,"num_event":632019,"num_file":995,"num_lumi":9950}]
+[{"file_size":375247816282,"max_ldate":1750112279,"median_cdate":1748189654,"median_ldate":1748189654,"nblocks":152,"nevents":635186,"nfiles":1000,"nlumis":10000,"num_block":152,"num_event":635186,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_5_mA_0p50_ctau_1p0/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":385711540017,"max_ldate":1744050420,"median_cdate":1743964192,"median_ldate":1743964192,"nblocks":21,"nevents":635185,"nfiles":1000,"nlumis":10000,"num_block":21,"num_event":635185,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_5_mA_1p00_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
@@ -161,7 +161,7 @@
 /scenarioA_mpi_5_mA_2p40_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":331417871992,"max_ldate":1744058155,"median_cdate":1744017799,"median_ldate":1744017799,"nblocks":16,"nevents":537335,"nfiles":1000,"nlumis":10000,"num_block":16,"num_event":537335,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_5_mA_2p40_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":135238363140,"max_ldate":1748095993,"median_cdate":1748017100,"median_ldate":1748017100,"nblocks":126,"nevents":219597,"nfiles":410,"nlumis":4100,"num_block":126,"num_event":219597,"num_file":410,"num_lumi":4100}]
+[{"file_size":465450045504,"max_ldate":1750181585,"median_cdate":1750121232,"median_ldate":1750121232,"nblocks":177,"nevents":755676,"nfiles":1410,"nlumis":10000,"num_block":177,"num_event":755676,"num_file":1410,"num_lumi":10000}]
 /scenarioA_mpi_5_mA_2p40_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":325341758574,"max_ldate":1749482029,"median_cdate":1749423586,"median_ldate":1749423586,"nblocks":86,"nevents":537163,"nfiles":1000,"nlumis":10000,"num_block":86,"num_event":537163,"num_file":1000,"num_lumi":10000}]
 /scenarioA_mpi_5_mA_2p40_ctau_1p0/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
@@ -169,7 +169,7 @@
 /scenarioB1_mpi_1_mA_0p33_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":515884648228,"max_ldate":1749537890,"median_cdate":1748246871,"median_ldate":1748246871,"nblocks":153,"nevents":817718,"nfiles":1000,"nlumis":10000,"num_block":153,"num_event":817718,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_1_mA_0p33_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":509424712639,"max_ldate":1748198625,"median_cdate":1748073050,"median_ldate":1748073050,"nblocks":255,"nevents":812074,"nfiles":993,"nlumis":9930,"num_block":255,"num_event":812074,"num_file":993,"num_lumi":9930}]
+[{"file_size":513018093732,"max_ldate":1750114140,"median_cdate":1748074355,"median_ldate":1748074355,"nblocks":261,"nevents":817807,"nfiles":1000,"nlumis":10000,"num_block":261,"num_event":817807,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_1_mA_0p33_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":499608907796,"max_ldate":1744003358,"median_cdate":1743811166,"median_ldate":1743811166,"nblocks":32,"nevents":817427,"nfiles":1000,"nlumis":10000,"num_block":32,"num_event":817427,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_1_mA_0p33_ctau_1p0/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
@@ -227,7 +227,7 @@
 /scenarioB1_mpi_4_mA_0p80_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":230865303570,"max_ldate":1749353369,"median_cdate":1748200395,"median_ldate":1748200395,"nblocks":112,"nevents":375979,"nfiles":1000,"nlumis":10000,"num_block":112,"num_event":375979,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_4_mA_0p80_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":227717897275,"max_ldate":1749149842,"median_cdate":1748047913,"median_ldate":1748047913,"nblocks":163,"nevents":375736,"nfiles":999,"nlumis":9990,"num_block":163,"num_event":375736,"num_file":999,"num_lumi":9990}]
+[{"file_size":227952724095,"max_ldate":1750126623,"median_cdate":1748048651.5,"median_ldate":1748048651.5,"nblocks":164,"nevents":376124,"nfiles":1000,"nlumis":10000,"num_block":164,"num_event":376124,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_4_mA_0p80_ctau_1p0/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":231740486222,"max_ldate":1744010530,"median_cdate":1743820200,"median_ldate":1743820200,"nblocks":24,"nevents":376457,"nfiles":1000,"nlumis":10000,"num_block":24,"num_event":376457,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_4_mA_1p33_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
@@ -265,13 +265,13 @@
 /scenarioB1_mpi_5_mA_1p67_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":323550830232,"max_ldate":1744041559,"median_cdate":1744021492,"median_ldate":1744021492,"nblocks":17,"nevents":526200,"nfiles":1000,"nlumis":10000,"num_block":17,"num_event":526200,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_5_mA_1p67_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":319018633354,"max_ldate":1749537870,"median_cdate":1748058159,"median_ldate":1748058159,"nblocks":205,"nevents":515552,"nfiles":979,"nlumis":9790,"num_block":205,"num_event":515552,"num_file":979,"num_lumi":9790}]
+[{"file_size":325867608747,"max_ldate":1750152825,"median_cdate":1748059949,"median_ldate":1748059949,"nblocks":215,"nevents":526584,"nfiles":1000,"nlumis":10000,"num_block":215,"num_event":526584,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_5_mA_1p67_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":322625943215,"max_ldate":1749333530,"median_cdate":1748071239,"median_ldate":1748071239,"nblocks":230,"nevents":525542,"nfiles":1000,"nlumis":10000,"num_block":230,"num_event":525542,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_5_mA_1p67_ctau_1p0/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":322767438975,"max_ldate":1744014121,"median_cdate":1743769837,"median_ldate":1743769837,"nblocks":27,"nevents":524863,"nfiles":1000,"nlumis":10000,"num_block":27,"num_event":524863,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_5_mA_2p40_ctau_0p1/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
-[{"file_size":106793282154,"max_ldate":1748505930,"median_cdate":1748008047,"median_ldate":1748008047,"nblocks":100,"nevents":172970,"nfiles":322,"nlumis":3220,"num_block":100,"num_event":172970,"num_file":322,"num_lumi":3220}]
+[{"file_size":438171379071,"max_ldate":1750139256,"median_cdate":1750118577,"median_ldate":1750118577,"nblocks":136,"nevents":709551,"nfiles":1321,"nlumis":10000,"num_block":136,"num_event":709551,"num_file":1321,"num_lumi":10000}]
 /scenarioB1_mpi_5_mA_2p40_ctau_10/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER
 [{"file_size":334930913954,"max_ldate":1743973473,"median_cdate":1743769765,"median_ldate":1743769765,"nblocks":22,"nevents":536511,"nfiles":1000,"nlumis":10000,"num_block":22,"num_event":536511,"num_file":1000,"num_lumi":10000}]
 /scenarioB1_mpi_5_mA_2p40_ctau_100/tafoyava-GENSIM_2023_postBPix-v2_ext-a6a6936d0d29e5654bb19555c3d2ec0e/USER

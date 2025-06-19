@@ -2,11 +2,14 @@ import sys
 import re
 
 input_file = ""
+step = ""
 
-if len(sys.argv) == 2 :
-        input_file = sys.argv[1]
+if len(sys.argv) == 3 :
+    input_file = sys.argv[1]
+    step = sys.argv[2]
 
-print(f"ADJUSTING FILE: {input_file}")
+print(f"  ")
+print(f"---> ADJUSTING FILE: {input_file}")
 
 
 # Read the file and check if the line already exists. If it doesn't, the line gets appended
@@ -32,10 +35,19 @@ def correct_path(input_file):
         content = f.read()
 
     if "-ext/_resubmit/" in content:
-        print("No changes made: '-ext/_resubmit/' already present.")
+        print("No changes made: '-ext/_resubmit/'already present.")
+        return
+    elif "-v2_ext/_resubmit/" in content:
+        print("No changes made: '-v2_ext/_resubmit/' already present.")
         return
 
-    updated_content = content.replace("-ext/", "-ext/_resubmit/")
+    updated_content = ""
+    if "-ext/" in content:
+        updated_content = content.replace("-ext/", "-ext/_resubmit/")
+    elif "-v2_ext/" in content:
+        updated_content = content.replace("-v2_ext/", "-v2_ext/_resubmit/")
+    else:
+        print(f"Something weird is going on. Terminating routine")
 
     with open(input_file, 'w') as f:
         f.write(updated_content)
@@ -95,7 +107,8 @@ correct_path(input_file)
 # Adding list of missing (i.e. unprocessed) files
 #crab_submit_scenarioA_mpi_1_mA_0p25_ctau_100.py
 #dataset="scenarioA_mpi_1_mA_0p25_ctau_100"
-step='CMSSW_13_0_14/src/2023_DIGIRAW-ext/'
+#step='CMSSW_13_0_14/src/2023_DIGIRAW-ext/'
+
 match = re.search(r'crab_submit_(.*)\.py$', input_file)
 if match:
     dataset = match.group(1)

@@ -8,7 +8,7 @@ from copy import deepcopy as copy
 
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-f','--folder', dest='folder', default='/home/hep/jtafoyav/production_2023/CMSSW_13_0_20/src/2023_GENSIM-v2_ext/')
+parser.add_argument('-f','--folder', dest='folder', default='/home/hep/jtafoyav/production_2023/CMSSW_13_0_20/src/2023_GENSIM-v2_ext/_resubmit/')
 parser.add_argument('-d','--dataset', action='store_true', default=False)
 parser.add_argument('-r','--resubmit', action='store_true', default=False)
 parser.add_argument('-e','--end', action='store_true', default=False)
