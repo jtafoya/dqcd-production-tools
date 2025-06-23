@@ -313,5 +313,41 @@
         "failed": 987,
         "killed": 0,
         "done": 13
+    },
+    "scenarioA_mpi_2_mA_0p25_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioA_mpi_5_mA_0p50_ctau_100": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioA_mpi_5_mA_2p40_ctau_1p0": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
+    },
+    "scenarioA_mpi_2_mA_0p90_ctau_10": {
+        "running": 0,
+        "idle": 0,
+        "finished": 0,
+        "transferring": 0,
+        "failed": 0,
+        "killed": 0,
+        "done": 0
     }
 }

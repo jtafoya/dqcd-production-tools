@@ -1,0 +1,4 @@
+/store/user/tafoyava/samples/DIGIRAW/scenarioB1_mpi_5_mA_2p40_ctau_1p0/DIGIRAW_2023_postBPix-ext/250613_153908/0000/GEN_SIM_RAW_17.root [192,195,198,199,191,196,200,194,193,197]
+/store/user/tafoyava/samples/DIGIRAW/scenarioB1_mpi_5_mA_2p40_ctau_1p0/DIGIRAW_2023_postBPix-ext/250613_153908/0000/GEN_SIM_RAW_854.root [8792,8793,8797,8800,8794,8796,8791,8795,8798,8799]
+/store/user/tafoyava/samples/DIGIRAW/scenarioB1_mpi_5_mA_2p40_ctau_1p0/DIGIRAW_2023_postBPix-ext/250613_153908/0000/GEN_SIM_RAW_682.root [737,738,733,732,735,739,740,734,736,731]
+/store/user/tafoyava/samples/DIGIRAW/scenarioB1_mpi_5_mA_2p40_ctau_1p0/DIGIRAW_2023_postBPix-ext/250613_153908/0000/GEN_SIM_RAW_351.root [4705,4701,4702,4709,4710,4706,4707,4703,4704,4708]

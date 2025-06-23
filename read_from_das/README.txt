@@ -22,3 +22,12 @@ Use `results_makedictionary.py'
 
 # Summarise the results stored in results_GENSIM_postBPix.txt (i.e. simply get sample)
 Use `results_manage.py'
+
+
+
+# Make a loop for constant monitoring with e.g.
+while true; do ./list_datasets.sh GENSIM_2023-v2_ext;
+	FILE="results_GENSIM_2023-v2_ext.txt";
+	python3 results_manage.py output/${FILE};
+	cp output/${FILE}_formated /home/hep/jtafoyav/public_html/dqcd-production-status/2023/${FILE};
+	echo " "; echo " "; echo " "; echo " "; echo " "; echo " "; date; echo "Waiting 2h"; sleep 2h; done

@@ -1,0 +1,2 @@
+/store/user/tafoyava/samples/DIGIRAW/scenarioA_mpi_5_mA_0p50_ctau_0p1/DIGIRAW_2023_postBPix-ext/250613_153653/0000/GEN_SIM_RAW_35.root [103,110,102,108,107,104,106,109,101,105]
+/store/user/tafoyava/samples/DIGIRAW/scenarioA_mpi_5_mA_0p50_ctau_0p1/DIGIRAW_2023_postBPix-ext/250613_153653/0000/GEN_SIM_RAW_23.root [2043,2044,2041,2042,2050,2046,2048,2049,2047,2045]
