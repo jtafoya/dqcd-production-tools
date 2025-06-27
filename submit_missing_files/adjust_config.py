@@ -99,6 +99,8 @@ def append_inputFiles(input_file, filesToProcess, processedFiles):
 append_line_if_missing(input_file, '\n')
 append_line_if_missing(input_file, 'config.Site.blacklist = [\'T2_US_MIT\']')
 append_line_if_missing(input_file, 'config.Site.whitelist = [\'T2_US_UCSD\',\'T2_US_Wisconsin\',\'T2_US_Florida\']')
+append_line_if_missing(input_file, 'config.section_("Debug")')
+append_line_if_missing(input_file, 'config.Debug.extraJDL = [\'My.CMS_ALLOW_OVERFLOW=False\']')
 append_line_if_missing(input_file, '\n')
 
 # Adding "_resubmit/" to config file path
