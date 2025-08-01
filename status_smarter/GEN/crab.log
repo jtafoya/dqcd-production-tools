@@ -1,0 +1,43 @@
+DEBUG 2025-07-30 12:22:50.243 UTC: 	 CRAB Client version: v3.250522
+DEBUG 2025-07-30 12:22:50.244 UTC: 	 Running on: Linux lx04.hep.ph.ic.ac.uk 5.14.0-503.33.1.el9_5.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 19 16:23:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-07-30 12:22:50.244 UTC: 	 Using SINGULARITY image: el7:x86_64
+DEBUG 2025-07-30 12:22:50.244 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-07-30 12:22:50.244 UTC: 	 Executing command: 'setfilestatus'
+DEBUG 2025-07-30 12:22:50.245 UTC: 	 Found CRAB cache file /home/hep/jtafoyav/.crab3
+DEBUG 2025-07-30 12:22:50.271 UTC: 	 Checking credentials
+DEBUG 2025-07-30 12:22:50.271 UTC: 	 Found proxy file /tmp/x509up_u1789945
+DEBUG 2025-07-30 12:22:50.271 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-07-30 12:22:50.272 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u1789945
+DEBUG 2025-07-30 12:22:50.309 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-07-30 12:22:50.310 UTC: 	 Getting proxy life time left
+DEBUG 2025-07-30 12:22:50.310 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u1789945
+DEBUG 2025-07-30 12:22:50.371 UTC: 	 output : 691157
+691157
+
+ error: 
+ retcode : 0
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Proxy valid for 191:59:17 hours
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Command use: setfilestatus
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Options use: ['--status', 'INVALID', '--dataset', '/scenarioB1_mpi_12_mA_1p20_ctau_0p6/tafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9/USER']
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Instance is None
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Server base url is None
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 dbsInstance  = prod/phys03
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 dataset      = /scenarioB1_mpi_12_mA_1p20_ctau_0p6/tafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9/USER
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 files        = None
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 status       = INVALID
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Read Url  = cmsweb.cern.ch:8443/dbs/prod/phys03/DBSReader/
+DEBUG 2025-07-30 12:22:50.372 UTC: 	 Write Url = cmsweb.cern.ch:8443/dbs/prod/phys03/DBSWriter/
+DEBUG 2025-07-30 12:22:50.373 UTC: 	 Encoded data for curl request: dataset=%2FscenarioB1_mpi_12_mA_1p20_ctau_0p6%2Ftafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9%2FUSER&validFileOnly=1
+DEBUG 2025-07-30 12:22:50.575 UTC: 	 Encoded data for curl request: dataset=%2FscenarioB1_mpi_12_mA_1p20_ctau_0p6%2Ftafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9%2FUSER&validFileOnly=0
+INFO 2025-07-30 12:22:50.767 UTC: 	 Dataset file count total/valid/invalid = 952/952/0
+DEBUG 2025-07-30 12:22:50.768 UTC: 	 Encoded data for curl request: {"dataset": "/scenarioB1_mpi_12_mA_1p20_ctau_0p6/tafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9/USER", "is_file_valid": 0}
+INFO 2025-07-30 12:22:51.048 UTC: 	 File(s) status changed successfully
+DEBUG 2025-07-30 12:22:51.049 UTC: 	 Encoded data for curl request: dataset=%2FscenarioB1_mpi_12_mA_1p20_ctau_0p6%2Ftafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9%2FUSER&validFileOnly=1
+DEBUG 2025-07-30 12:22:51.173 UTC: 	 Encoded data for curl request: dataset=%2FscenarioB1_mpi_12_mA_1p20_ctau_0p6%2Ftafoyava-scenarioB1_mpi_12_mA_1p20_ctau_0p6_2023_postBPix-ext-5d2a16e478509b3ad124faf8a46982a9%2FUSER&validFileOnly=0
+INFO 2025-07-30 12:22:51.401 UTC: 	 Dataset file count total/valid/invalid = 952/0/952
+INFO 2025-07-30 12:22:51.404 UTC: 	 Log file is /home/hep/jtafoyav/production_2023/tools/status_smarter/GEN/crab.log

@@ -29,6 +29,7 @@ else :
 
 output_file = input_file+"_formated"
 output_file_dict_complete = input_file+"_dictionary"
+output_file_dict_complete__intermediateMasses = input_file+"_dictionary__intermediateMasses"
 output_file_dict_incomplete = input_file+"_dictionary_incomplete"
 output_file_dict_complete_duplicated = input_file+"_dictionary_complete_duplicated"
 
@@ -81,7 +82,7 @@ def clean_file(output_file, output_file_dict):
             cleaned_line = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":1000
             outfile.write("     " + cleaned_line)
 
-### Check file completeness based on nfiles (fails if there are duplicate files)
+### Check file completeness based on nfiles (check fails if there are duplicate files)
 def clean_file_OnlyFinishedSamples_nfiles(output_file, output_file_dict_complete):
     with open(output_file, 'r') as infile, open(output_file_dict_complete, 'w') as outfile:
         for line in infile:
@@ -122,6 +123,11 @@ def get_nfiles_val(line):
         print("nfiles not found")
 
 nlumis_val_reference=9000
+#nlumis_val_reference=9500
+#nlumis_val_reference=10000
+
+#nlumis_val_reference_intermediateMasses=nlumis_val_reference/10
+nlumis_val_reference_intermediateMasses=1000
 
 ### Check file completeness based on nlumis (robust to duplicate files)
 def clean_file_OnlyFinishedSamples_nlumis(output_file, output_file_dict_complete):
@@ -131,7 +137,28 @@ def clean_file_OnlyFinishedSamples_nlumis(output_file, output_file_dict_complete
                nlumis_val=get_nlumis_val(line)
 
 #               if '"nlumis":10000' in line: # only completed samples are listed
-               if nlumis_val >= nlumis_val_reference: # only samples completed above some value (e.g. 90%) are listed
+#               if nlumis_val >= nlumis_val_reference: # only samples completed above some value (e.g. 90%) are listed
+               if (nlumis_val >= nlumis_val_reference) or (nlumis_val >= nlumis_val_reference_intermediateMasses and nlumis_val <= 1000): # only samples completed above some value (e.g. 90%) are listed. This tries to account for new samples at intermediate masses, which span over a total of 1000 lumi blocks instead of 10000. Check may not work for older samples running
+                    cleaned_line_1 = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":
+                    cleaned_line_2 = re.sub(r'"nlumis":\d+', '', cleaned_line_1)  # Remove ,"nlumis":
+                    outfile.write("     " + cleaned_line_2)
+#                elif '"nlumis":9990' in line:
+#                    for exception in list_exceptions:
+#                        if exception in line:
+#                            cleaned_line_1 = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":
+#                            cleaned_line_2 = re.sub(r'"nlumis":\d+', '', cleaned_line_1)  # Remove ,"nlumis":
+#                            outfile.write("     " + cleaned_line_2)
+
+def clean_file_OnlyFinishedSamples_nlumis__intermediateMasses(output_file, output_file_dict_complete__intermediateMasses):
+    with open(output_file, 'r') as infile, open(output_file_dict_complete__intermediateMasses, 'w') as outfile:
+        for line in infile:
+            if not ("scenarioB2" in line or "scenarioC" in line): # only scenarioA and scenarioB1
+               nlumis_val=get_nlumis_val(line)
+               nfiles_val=get_nfiles_val(line)
+
+#               if '"nlumis":10000' in line: # only completed samples are listed
+#               if nlumis_val >= nlumis_val_reference: # only samples completed above some value (e.g. 90%) are listed
+               if (nlumis_val == nfiles_val) and (nlumis_val >= nlumis_val_reference_intermediateMasses and nlumis_val <= 1000): # only samples completed above some value (e.g. 90%) are listed. This tries to account for new samples at intermediate masses, which span over a total of 1000 lumi blocks instead of 10000. Check may not work for older samples running
                     cleaned_line_1 = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":
                     cleaned_line_2 = re.sub(r'"nlumis":\d+', '', cleaned_line_1)  # Remove ,"nlumis":
                     outfile.write("     " + cleaned_line_2)
@@ -150,7 +177,8 @@ def clean_file_IncompleteSamples_nlumis(output_file, output_file_dict_incomplete
                 nlumis_val=get_nlumis_val(line)
 
 #                if '"nlumis":10000' not in line: # only incomplete samples are listed
-                if nlumis_val < nlumis_val_reference: # only samples completed below some reference value (e.g. 90%) are listed
+#                if nlumis_val < nlumis_val_reference: # only samples completed below some reference value (e.g. 90%) are listed
+                if (nlumis_val < nlumis_val_reference) and (nlumis_val < nlumis_val_reference_intermediateMasses or nlumis_val > 1000): # only samples completed above some value (e.g. 90%) are listed. This tries to account for new samples at intermediate masses, which span over a total of 1000 lumi blocks instead of 10000. Check may not work for older samples running 
                     cleaned_line_1 = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":
                     cleaned_line_2 = re.sub(r'"nlumis":\d+', '', cleaned_line_1)  # Remove ,"nlumis":
                     outfile.write("     " + cleaned_line_2)
@@ -163,7 +191,7 @@ def clean_file_CompleteDuplicatedSamples(output_file, output_file_dict_complete_
                 nfiles_val=get_nfiles_val(line)
 
 #                if ('"nlumis":10000' in line and '"nfiles":1000' not in line): # only complete samples with duplicated files are listed
-                if nlumis_val != 10*nfiles_val: # only samples with inconsistent nlumis and nfiles are listed
+                if nlumis_val != 10*nfiles_val or nlumis_val != nfiles_val: # only samples with inconsistent nlumis and nfiles are listed
                     cleaned_line_1 = re.sub(r',"nfiles":\d+', '', line)  # Remove ,"nfiles":
                     cleaned_line_2 = re.sub(r'"nlumis":\d+', '', cleaned_line_1)  # Remove ,"nlumis":
                     outfile.write(line)
@@ -178,8 +206,12 @@ def clean_file_CompleteDuplicatedSamples(output_file, output_file_dict_complete_
 clean_file_OnlyFinishedSamples_nlumis(output_file, output_file_dict_complete)
 print(f"	Dictionary of completed samples written to {output_file_dict_complete}")
 
+clean_file_OnlyFinishedSamples_nlumis__intermediateMasses(output_file, output_file_dict_complete__intermediateMasses)
+print(f"	Dictionary of completed samples for intermediate mass scenarios written to {output_file_dict_complete__intermediateMasses}")
+
 clean_file_IncompleteSamples_nlumis(output_file, output_file_dict_incomplete)
 print(f"	Dictionary of incomplete samples written to {output_file_dict_incomplete}")
 
 clean_file_CompleteDuplicatedSamples(output_file, output_file_dict_complete_duplicated)
 print(f"	Dictionary of duplicated samples written to {output_file_dict_complete_duplicated}")
+

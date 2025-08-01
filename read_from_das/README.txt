@@ -31,3 +31,6 @@ while true; do ./list_datasets.sh GENSIM_2023-v2_ext;
 	python3 results_manage.py output/${FILE};
 	cp output/${FILE}_formated /home/hep/jtafoyav/public_html/dqcd-production-status/2023/${FILE};
 	echo " "; echo " "; echo " "; echo " "; echo " "; echo " "; date; echo "Waiting 2h"; sleep 2h; done
+
+# Used to monitor the GEN level intermediate mass samples
+while true; do ./list_datasets.sh "2023_postBPix-ext"; FILE="results_GENall_2023_postBPix-ext.txt"; python3 results_manage.py output/${FILE}; cp output/${FILE}_formated /home/hep/jtafoyav/public_html/dqcd-production-status/2023/${FILE}_includingIntermediateMasses; echo " "; echo " "; echo " "; echo " "; echo " "; echo " "; date; echo "Waiting 2h"; sleep 2h; done
